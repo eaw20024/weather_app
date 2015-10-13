@@ -5,7 +5,7 @@ puts "Please enter your Zip Code: (i.e 200011)"
 user_location = gets.chomp
 
 #Method that accepts the location as a parameter then
-#uses the weathger gem of choice to determine the weathe
+#uses the weathger gem of choice to determine the weather
 def get_user_location(user_location)
     client = Weatherman::Client.new
     client.lookup_by_location(user_location)
